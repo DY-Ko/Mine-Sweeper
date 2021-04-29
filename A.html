@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>지뢰찾기</title>
+  <link rel="stylesheet" href="./B.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap" rel="stylesheet">
+
+  <style>
+    table {
+      /* border-collapse: collapse; */
+      top: 10px;
+      left: 10px;
+      background-color: #BDBDBD;
+    }
+    td {
+      border: 2.5px solid;
+      border-color: #f5f3eb #bab7a9 #bab7a9 #fff9db;
+      text-align: center;
+      line-height: 25px;
+      width: 30px;
+      height: 30px;
+      background: black;
+      box-sizing: border-box;
+      font-family: 'RobotoMono', monospace;
+      font-size: 14;
+      color: black;
+      font-weight: 700;
+    }
+    td.opened {
+      background: #cecab7;
+    }
+    #back {
+      background: #059;
+      border: 1px solid black;
+    }
+    .result {
+      text-align: center;
+      font-size: 20px;
+    }
+  </style>
+</head>
+<body>
+  <input id="hor" type="number" placeholder="가로" value="10" >
+  <input id="ver" type="number" placeholder="세로" value="10" >
+  <input id="mine" type="number" placeholder="지뢰" value="20" >
+
+  <button id="exec">실행</button>
+    <table id="table">
+      <thead>
+        <tr>
+          <!-- <td id="time"><spand id='flags-left'></spand></td> -->
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <span id="result"></span>
+
+
+  <script src="./C.js"></script>
+</body>
+</html>
