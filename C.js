@@ -2,7 +2,8 @@ let dataset = [];
 let tbody = document.querySelector('#table tbody');
 let gameend = false;
 let opencell = 0;
-
+window.document.onselectstart = new Function("return false");
+window.document.ondragstart = new Function("return false");
 
 
 document.querySelector('#exec').addEventListener('click', function() {
