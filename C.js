@@ -69,8 +69,8 @@ gameend = false;
         if (e.currentTarget.textContent === '' || e.currentTarget.textContent === 'X'){
           e.currentTarget.textContent = '🚩';
         } else if (e.currentTarget.textContent === '🚩') {
-          e.currentTarget.textContent = '?';
-        } else if (e.currentTarget.textContent === '?') {
+          e.currentTarget.textContent = '❓';
+        } else if (e.currentTarget.textContent === '❓') {
           if (dataset[rowcell][colcell] === 'X') {
             e.currentTarget.textContent = 'X';
           } else {
